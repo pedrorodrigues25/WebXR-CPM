@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+</head>
+<body>
+
+    <!-- include A-Frame obviously 
+        <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script> -->
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+    <a-scene>
+
+
+        <a-assets>
+            <a-asset-item id="Check-in" src='/assets/3D models/airport_foot_traffic/Aeroporto-2.glb'></a-asset-item>
+            <a-asset-item id="747" src='/assets/3D models/boeing_747_with_interior_free/scene.gltf'></a-asset-item>
+
+        </a-assets>
+
+        <a-entity gltf-model='#Check-in' scale="1 1 1" position="-10 0 0"></a-entity>
+        <a-entity glTF-model='#747' scale="0.005 0.005 0.005"></a-entity>
+
+        <!-- <a-box position="-13.90 0.312 2.506" src="assets/img/textures/wall-texture.jpg" scale="8.710 1.620 0.130" width="1" height="1" depth="1" color="#ABB0AC"></a-box> -->
+
+        <a-entity camera look-controls wasd-controls position="0 0.6 0" acceleration="1000"></a-entity>
+    </a-scene>
+</body>
+</html>
